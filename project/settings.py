@@ -15,7 +15,7 @@ SECRET_KEY = 'django-insecure-1k409681^q$@xx5*+z@-veptk4lsmt#v-gms(=r(10omz0*h+e
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["*"]
 #ALLOWED_HOSTS = ['https://deep-freehold-408117.de.r.appspot.com'
 #                 ,'953159338868-compute@developer.gserviceaccount.com'
 #                 ,'lanatamaraola@gmail.com']
