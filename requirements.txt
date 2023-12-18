@@ -48,9 +48,9 @@ sphinx-rtd-theme==0.2.4
 sqlparse==0.4.4
 tensorboard==2.15.0
 tensorboard-data-server==0.7.1
-tensorflow==2.15.0
-tensorflow-estimator==2.15.0
-tensorflow-intel==2.15.0
+tensorflow
+tensorflow-estimator
+tensorflow-intel
 tensorflow-io-gcs-filesystem==0.31.0
 termcolor==2.3.0
 threadpoolctl==3.2.0
