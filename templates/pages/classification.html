@@ -1,0 +1,38 @@
+{% load static %} {% block content%}
+
+<head>
+  <meta charset="UTF-8" />
+
+  <title>Classification</title>
+  <!--CSS-->
+  <link rel="stylesheet" href="{% static 'css/segm_styles.css' %}" />
+</head>
+
+<body>
+  <div class="uploadWrapper">
+    <form
+      id="imageUploadForm"
+      class="imageUploadForm"
+      method="POST"
+      enctype="multipart/form-data"
+    >
+      {% csrf_token %}
+      <span class="helpText" id="helpText">Upload an image</span>
+      <input
+        type="file"
+        id="file"
+        class="uploadButton"
+        name="image"
+        accept="image/*"
+        onchange="uploadImage(this)"
+      />
+      <div id="uploadedImg" class="uploadedImg">
+        <span class="unveil"></span>
+      </div>
+
+    </form>
+  </div>
+  <script src="{% static 'js/segmentation.js' %}"></script>
+</body>
+
+{% endblock content%}
